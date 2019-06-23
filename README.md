@@ -40,12 +40,12 @@ The goals / steps of this project are the following:
 
 #### 1. Basic summary of the data set.
 
-I used the numpy library to calculate summary statistics of the traffic
+I used the numpy library to calculate the summary statistics of the traffic
 signs data set:
 
-* The size of training set is `34799`
+* The size of the training set is `34799`
 * The size of the validation set is `4410`
-* The size of test set is `12630`
+* The size of the test set is `12630`
 * The shape of a traffic sign image is `(32, 32, 3)`
 * The number of unique classes/labels in the data set is `43`
 
@@ -63,10 +63,9 @@ Here is an example of classes distribution from the training set:
 
 #### 1. Data preprocessing
 
-As a first step, I decided to convert the images to grayscale. It reduces the dimesnion of an input and makes normalization of the image easier.
+As a first step, I decided to convert the images to grayscale. It reduces the dimension of input and makes normalization of the image easier.
 
-At next step I am normalizing the data in order to decrease complexity and potentialy increase network acuracy and learning speed.
-
+At the next step, I am normalizing the data in order to decrease complexity and potentially increase network accuracy and learning speed.
 
 | Raw  | Gray  | Normalized  | 
 |:-:|:-:|:-:|
@@ -96,13 +95,13 @@ My final model consisted of the following layers:
 #### 3. How model is trained
 
 
-To train the model, I used an `AdamOptimizer`, with `rate = 0.001`, `EPOCHS = 20`, `BATCH_SIZE = 128`.
+To train the model, I used an `AdamOptimizer`, with `rate = 0.001`, `EPOCHS = 30`, `BATCH_SIZE = 128`.
 
-AdamOptimizer is known as computationally efficient, low memory consuming and easy to tune optimizer. Rate 
+AdamOptimizer is known as computationally efficient, low memory consumption and easy to tune optimizer. Rate 
 
-`rate` and `BATCH_SIZE` were selected via trial and error method. Smaller `rate` makes learning too slow, high one doesn't converge well. 
+`rate` and `BATCH_SIZE` were selected via trial and error method. Smaller `rate` makes learning too slow, high one does not converge well. 
 
-`EPOCHS` was choosen to achive necessary precision.
+`EPOCHS` was chosen to achieve the necessary precision.
 
 #### 4. The approach.
 
@@ -114,10 +113,9 @@ My final model results were:
 
 Some thoughts about the architecture:
 
-* Current `LaNet` architecture was one I knew from previous cource lessons and it did it's job.
-* For current architecture was quite tricky to find proper hypeparameters and normalize input.
+* Current `LaNet` architecture was one I knew from previous course lessons and it did its job.
+* For current architecture was quite tricky to find proper hyperparameters and normalize input.
 * I tuned the `EPOCHS` parameter, increased it to 20 to reach learning threshold. 
- 
 
 ### Test a Model on New Images
 
@@ -142,8 +140,7 @@ Here are five German traffic signs that I found on the web:
 |Stop                   |                  [1.0000000e+00 9.8190428e-17 3.0260198e-19 1.7365903e-19 1.4812312e-19] |
 |Keep right             |                  [1.0000000e+00 8.9166329e-25 7.2660056e-32 4.0964350e-32 1.1183832e-32] |
 
-The model was able to correctly guess all the signs, which gives an accuracy of 100%. This is expected result, because newly found images are clear, without noise and have a good lighting conditions. Taking into account that model shown `> 93%` accuracy on the test set, there should be no problem to classify these images. 
-
+The model was able to correctly guess all the signs, which gives an accuracy of 100%. This is the expected result because newly found images are clear, without noise and have good lighting conditions. Taking into account that the model has shown `> 93%` accuracy on the test set, there should be no problem to classify these images. 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
