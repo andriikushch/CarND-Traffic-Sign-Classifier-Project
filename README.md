@@ -22,6 +22,9 @@ The goals / steps of this project are the following:
 [normalized_image]: ./results/normalized_image.png "normalized_image"
 [gray_image]: ./results/gray.png "gray_image"
 [images_from_the_internet]: ./results/images_from_the_internet.png "images_from_the_internet"
+[vis0]: ./results/vis_0.png "vis_0"
+[vis1]: ./results/vis_1.png "vis_1"
+[vis2]: ./results/vis_2.png "vis_2"
 
 ---
 ## Writeup
@@ -134,7 +137,12 @@ Here are five German traffic signs that I found on the web:
 
 The model was able to correctly guess all the signs, which gives an accuracy of 100%. This is the expected result because newly found images are clear, without noise and have good lighting conditions. Taking into account that the model has shown `> 93%` accuracy on the test set, there should be no problem to classify these images. 
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+### Visualizing the Neural Network
 
 
+
+| Layer  | Image  |
+|---|---|
+| Original image:  | ![alt text][vis0]  |
+| Conv1  | ![alt text][vis1]  |
+| Conv2  | ![alt text][vis2]  |
