@@ -40,7 +40,7 @@ The goals / steps of this project are the following:
 
 #### 1. Basic summary of the data set.
 
-I used the pandas library to calculate summary statistics of the traffic
+I used the numpy library to calculate summary statistics of the traffic
 signs data set:
 
 * The size of training set is `34799`
